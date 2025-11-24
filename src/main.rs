@@ -901,7 +901,6 @@ const TAMPERMONKEY_SCRIPT: &str = r#"
 // @match        https://chatgpt.com/*
 // @match        https://gemini.google.com/*
 // @match        https://claude.ai/*
-// @match        https://duckduckgo.com/*
 // @match        https://chat.deepseek.com/*
 // @match        https://aistudio.google.com/*
 // @connect      127.0.0.1
