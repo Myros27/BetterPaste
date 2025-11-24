@@ -4,7 +4,7 @@
 
 **BetterPaste** is a bridge between your local codebase and AI Chat interfaces (ChatGPT, Claude, Gemini, DeepSeek). 
 
-It solves the problem of "Context Limits" and "Formatting Errors" by providing a streamlined workflow to generate context-optimized XML and automatically patch your local files based on AI responses.
+It solves the problem of copy pasting diffs from AI by providing a streamlined workflow to generate context-optimized XML and automatically patch your local files based on AI responses.
 
 ## 🚀 Features
 
