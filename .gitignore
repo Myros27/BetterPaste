@@ -1,0 +1,9 @@
+/target
+/.git
+/.idea
+betterPaste_config.json
+betterPaste.exe
+*.pfx
+*.cer
+.idea
+.vscode
