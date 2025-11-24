@@ -894,10 +894,10 @@ async fn main() -> Result<(), eframe::Error> {
 #[rustfmt::skip]
 const TAMPERMONKEY_SCRIPT: &str = r#"
 // ==UserScript==
-// @name         BetterPaste Connector (v1.4 - Expanded Support)
+// @name         BetterPaste Connector
 // @namespace    http://tampermonkey.net/
 // @version      1.4
-// @description  Scans AI chat for BetterPaste code blocks (Fixes duplicate/flattened transfers)
+// @description  Scans AI chat for BetterPaste code blocks
 // @match        https://chatgpt.com/*
 // @match        https://gemini.google.com/*
 // @match        https://claude.ai/*
