@@ -1,0 +1,37 @@
+[package]
+name = "betterPaste"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+# GUI
+eframe = "0.33" # Or latest version
+egui = "0.33"
+
+# Async & Web Server
+tokio = { version = "1", features = ["full"] }
+axum = "0.8"
+tower-http = { version = "0.6", features = ["cors"] } # Crucial for allowing browser requests
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+# File Handling
+ignore = "0.4" # Handles .gitignore logic
+
+parking_lot = "0.12" # For sharing state between GUI and Server safely
+chrono = "0.4"
+arboard = "3.6" # For Clipboard access
+regex = "1.12"
+
+image = { version = "0.25", default-features = false, features = ["png", "ico"] }
+rfd = "0.15"
+
+[build-dependencies]
+winres = "0.1" # For embedding the .ico into the exe
+
+[profile.release]
+opt-level = "z"     # Optimize for size ("s" is also good, "z" is aggressive)
+lto = true          # Link Time Optimization (removes dead code across crates)
+codegen-units = 1   # Slower compilation, but better optimization
+panic = "abort"     # Removes panic unwinding logic (saves space, harder to debug crashes)
+strip = true        # Strips debug symbols (massively reduces size)
